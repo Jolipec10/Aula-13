@@ -1,52 +1,58 @@
 //João Felipe M. F.
 /*
-//Exercicio 1:
-
-let objetoFilme = {
-Nome: "Click",
-Ano: 2006,
-Direção: ["Frank Coraci"],
-Elenco:	["Adam Sandler", "Kate Beckinsale", "Christopher Walken", "David Hasselhoff", "Henry Winkler", "Julie Kavner", "Jennifer Coolidge", "Sean Astin"],
-Assistido: true
-};
-*/
-/*
-//Exercicio 2:
-
-let objetoPessoa = {
-Nome: "João Felipe",
-Idade: 29,
-GêneroMusical: "Rock",
-
+//Exercicio 1
+const filme = {
+    direcao: 'Frank Coraci' ,
+    nome: 'Click' ,
+    anoLancamento: '2006' ,
+    listaElenco: ["Adam Sandler", "Kate Beckinsale", "Christopher Walken", "David Hasselhoff", "Henry Winkler", "Julie Kavner", "Jennifer Coolidge", "Sean Astin"] ,
+    filmeAssistido: true
 };
 
-console.log("O nome da pessoa é", Nome, "ela tem", Idade, "anos e gosta muito de", Gênero);
+console.log ("Diretor: ", filme.direcao)
+console.log ("Nome do filme: "filme.nome)
+console.log ("Ano de lançamento: "filme.anoLancamento)
+console.log ("Elenco: "filme.listaElenco)
+console.log ("Filme já assistido? "filme.filmeAssistido)
 */
 /*
-//Exercicio 3:
+//Exercicio 2
+const pessoa = {
+    nome: 'João Felipe' ,
+    idade: '29' ,
+    generoMusical: 'Rock' ,
+};
 
-objetoFilme.personagens = ["Adam Sandler", "Kate Beckinsale", "Christopher Walken", "David Hasselhoff", "Henry Winkler", "Julie Kavner", "Jennifer Coolidge", "Sean Astin"];
-console.log(objetoFilme.elenco[0] + "->" + objetoFilme.personagens[0]);
-console.log(objetoFilme.elenco[1] + "->" + objetoFilme.personagens[1]);
+console.log("o nome da pessoa é ", pessoa.nome, "ela tem ", pessoa.idade, "anos", "e gosta muito de ", pessoa.generoMusical);
 
-objetoFilmes.Film.elenco[0] = "xuxa";
-console.log(objetoFilme.personagens[0]);
 
-console.log(objetoFilme);
+//Exercicio 3
+/*
+const filme = {
+    direcao: 'Frank Coraci' ,
+    nome: 'Click' ,
+    anoLancamento: '2006' ,
+    listaElenco: ["Adam Sandler", "Kate Beckinsale", "Christopher Walken", "David Hasselhoff", "Henry Winkler", "Julie Kavner", "Jennifer Coolidge", "Sean Astin"] ,
+    filmeAssistido: true ,
+    listaPersonagens: ["Michael", "Donna", "Morty", "John", "Theodore", "Trudy", "Janine", "Bill"] ,
+}
 
-//Michael, Donna, Morty, John, Theodore, Trudy, Janine, Bill
+console.log(filmes.listaElenco[0] + "->" + filme.listaPersonagens[0]);
+console.log(filmes.listaElenco[1] + "->" + filme.listaPersonagens[1]);
+
+filme.listaElenco[0] = (property) 
 */
 /*
 const usuario = {
-    nome: 'Prof'
-    idade 25,
-    email: 'prof@senacrs.com.br'
+    nome: 'Prof ,
+    idade: 25 ,
+    email: 'prof@senacrs.com.br' ,
     cidade: 'São Paulo'
 }
 
 const novoUsuario = {
     ...usuario,
-    nome: 'João'
+    nome: 'João' ,
     idade: 28
 }
 
@@ -54,27 +60,29 @@ console.log(usuario);
 console.log(novoUsuario);
 */
 /*
-const listaDeNomes = ["Mika", "Paula", "Vitor"]
+const listaDeNomes = ["Mika", "Paula", "Victor"]
 
 const copiaListaDeNomes = [...listaDeNomes]
 
-
-console.log(copiaListaDeNomes) //["Mika", "Paula", "Vitor"]
+console.log(copiaListaDeNomes) //["Mika", "Paula", "Victor"]
 */
 
-//Exercicio 4:
-
-const objetoPessoa = {
-    Nome: "João Felipe",
-    Idade: 29,
-    GêneroMusical: "Rock",
-    ComidasPreferidas: "Sushi", "Açai",
+//Exercicio 4
+const pessoa = {
+    nome: 'João Felipe' ,
+    idade: '29' ,
+    generoMusical: 'Rock' ,
 };
 
-function lerObjetoPessoas(objeto){
-    let novoObjeto = {...objeto}
-    novoObjeto.comidasPreferidas = ["Sushi", "Açai"];
-    novoObjeto.melhorAmiga = {nome: "Shaiane", idade: 30};
+
+function objetoPessoas (pessoa) {
+    const pessoas = {
+        ...novaPropriedade  ,
+        comidas: ["Sushi", "Açai"]
+
+        nomeAmigo: 'Shaiane' ,
+        idadeAmigo: '30' ,
+    }
 }
- console.log('O nome da pessoa é ${novoObjeto.nome} e suas comidas preferidas são ${novoObjeto.
-    comidasPreferidas[0]}, $
+
+console.log(pessoa.nome, pessoa.idade, pessoa, generoMusical)
